@@ -1,6 +1,6 @@
 <script>
-import MyFunction from "../helpers/Function";
-import Store from "../data/Store";
+import MyFunction from "../../helpers/Function";
+import Store from "../../data/Store";
 export default {
 	name: "Paginator",
 	data() {

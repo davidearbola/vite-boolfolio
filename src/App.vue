@@ -1,9 +1,9 @@
 <script>
 import Store from "./data/Store";
 import MyFunction from "./helpers/Function";
-import AppHeader from "./components/Header/AppHeader.vue";
-import Paginator from "./components/Paginator.vue";
-import ProjectCard from "./components/ProjectCard.vue";
+import AppHeader from "./components/header/AppHeader.vue";
+import Paginator from "./components/elements/Paginator.vue";
+import ProjectCard from "./components/elements/ProjectCard.vue";
 
 export default {
 	name: "App",
