@@ -1,6 +1,7 @@
 <script>
 import Store from "../../data/Store";
 import MyFunction from "../../helpers/Function";
+import { RouterLink } from "vue-router";
 
 export default {
 	name: "AppHeader",
@@ -17,9 +18,11 @@ export default {
 
 <template>
 	<nav class="nav justify-content-center bg-dark">
-		<a class="nav-link text-decoration-none text-white" href="#">Home</a>
-		<a class="nav-link text-decoration-none text-white" href="#">About</a>
-		<a class="nav-link text-decoration-none text-white" href="#">Projects</a>
+		<li v-for="link in Store.menuLink">
+			<router-link :to="{ name: link }" class="nav-link text-white">
+				{{ link }}
+			</router-link>
+		</li>
 	</nav>
 </template>
 
