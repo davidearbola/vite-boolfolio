@@ -12,7 +12,7 @@ export default {
 	},
 	methods: {},
 	created() {
-		axios.get(`${Store.base_url}api/projects/${this.$route.params.id}`).then((response) => {
+		axios.get(`${Store.base_url}api/projects/${this.$route.params.slug}`).then((response) => {
 			if (response.data.success) {
 				this.project = response.data.project;
 			} else {

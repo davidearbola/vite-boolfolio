@@ -21,7 +21,7 @@ export default {
 		<i v-for="language in project.languages" :class="language.icon" class="me-2"></i>
 		<p>Tipo di progetto:</p>
 		<p>{{ project.type.name }}</p>
-		<router-link class="fa-solid fa-search" :to="{ name: 'ProjectDetail', params: { id: project.id } }"></router-link>
+		<router-link class="fa-solid fa-search" :to="{ name: 'ProjectDetail', params: { slug: project.slug } }"></router-link>
 	</div>
 </template>
 
