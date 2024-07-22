@@ -15,10 +15,9 @@ export default {
 		axios.get(`${Store.base_url}api/projects/${this.$route.params.id}`).then((response) => {
 			if (response.data.success) {
 				this.project = response.data.project;
+			} else {
+				this.$router.push({ name: "not-found" });
 			}
-			//  else {
-			// 	this.$router.push({ name: "not-found" });
-			// }
 		});
 	},
 };
